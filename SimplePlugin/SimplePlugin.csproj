@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Nuget Settings">
+        <Title>SimplePlugin</Title>
+        <Authors>ChiaraBm</Authors>
+        <Description>A simple source generated plugin handling and loading system</Description>
+        <Copyright>ChiaraBm</Copyright>
+        <PackageIcon>logo.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/ChiaraBm/SimplePlugin</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/ChiaraBm/SimplePlugin/blob/main/LICENSE.md</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/ChiaraBm/SimplePlugin</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>plugin</PackageTags>
+        <Version>1.0.0</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\Assets\logo.png">
+            <Pack>True</Pack>
+            <PackagePath>/</PackagePath>
+            <Link>logo.png</Link>
+        </None>
+        <None Include="..\README.md">
+            <Pack>True</Pack>
+            <PackagePath>/</PackagePath>
+            <Link>README.md</Link>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SimplePlugin.Generator\SimplePlugin.Generator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    </ItemGroup>
+
+</Project>

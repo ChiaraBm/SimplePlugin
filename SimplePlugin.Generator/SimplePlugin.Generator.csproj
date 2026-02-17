@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <IsPackable>false</IsPackable>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+
+        <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+        <IsRoslynComponent>true</IsRoslynComponent>
+
+        <RootNamespace>SimplePlugin.Generator</RootNamespace>
+        <PackageId>SimplePlugin.Generator</PackageId>
+    </PropertyGroup>
+
+    <PropertyGroup Label="Nuget Settings">
+        <Title>SimplePlugin.Generator</Title>
+        <Authors>ChiaraBm</Authors>
+        <Description>A simple source generated plugin handling and loading system</Description>
+        <Copyright>ChiaraBm</Copyright>
+        <PackageIcon>logo.png</PackageIcon>
+        <PackageProjectUrl>https://github.com/ChiaraBm/SimplePlugin</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/ChiaraBm/SimplePlugin/blob/main/LICENSE.md</PackageLicenseUrl>
+        <PackageIcon>logo.png</PackageIcon>
+        <RepositoryUrl>https://github.com/ChiaraBm/SimplePlugin</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>plugin</PackageTags>
+        <Version>1.0.0</Version>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="..\Assets\logo.png">
+            <Pack>True</Pack>
+            <PackagePath>/</PackagePath>
+            <Link>logo.png</Link>
+        </None>
+        <None Include="..\README.md">
+            <Pack>True</Pack>
+            <PackagePath>/</PackagePath>
+            <Link>README.md</Link>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.3.0"/>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.3.0"/>
+    </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Test/">
+    <Project Path="Test/SimplePluginTest.Host/SimplePluginTest.Host.csproj" />
+    <Project Path="Test/SimplePluginTest.Plugin/SimplePluginTest.Plugin.csproj" />
+    <Project Path="Test/SimplePluginTest.Sdk/SimplePluginTest.Sdk.csproj" />
+  </Folder>
+  <Project Path="SimplePlugin.Generator/SimplePlugin.Generator.csproj" />
+  <Project Path="SimplePlugin/SimplePlugin.csproj" />
+</Solution>
