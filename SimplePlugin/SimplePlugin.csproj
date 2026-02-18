@@ -25,7 +25,7 @@
         <RepositoryUrl>https://github.com/ChiaraBm/SimplePlugin</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>plugin</PackageTags>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
@@ -40,6 +40,7 @@
             <PackagePath>/</PackagePath>
             <Link>README.md</Link>
         </None>
+        <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
     </ItemGroup>
 
     <ItemGroup>
