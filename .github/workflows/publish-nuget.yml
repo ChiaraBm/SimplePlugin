@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - "SimplePlugin/**.csproj"
-      - "SimplePlugin.Generator/**.csproj"
+      - "SimplePlugin.Abstractions/**.csproj"
     branches:
       - main
 
@@ -20,7 +20,7 @@ jobs:
     
     strategy:
       matrix:
-        projectName: [ SimplePlugin, SimplePlugin.Generator ]
+        projectName: [ SimplePlugin, SimplePlugin.Abstractions ]
     
     steps:
       # Checkout code

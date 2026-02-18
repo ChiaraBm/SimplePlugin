@@ -1,11 +1,10 @@
-﻿using System.Collections.Generic;
-using Microsoft.CodeAnalysis;
+﻿using Microsoft.CodeAnalysis;
 
-namespace SimplePlugin.Generator;
+namespace SimplePlugin;
 
-public static class AnalyzeHelper
+internal static class AnalyzeHelper
 {
-    public static IEnumerable<INamedTypeSymbol> GetAllTypes(IModuleSymbol module)
+    internal static IEnumerable<INamedTypeSymbol> GetAllTypes(IModuleSymbol module)
     {
         // Current assembly
         foreach (var type in GetAllTypesFromNamespace(module.ContainingAssembly.GlobalNamespace))

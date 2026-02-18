@@ -1,6 +1,6 @@
-﻿using SimplePlugin;
+﻿using SimplePlugin.Abstractions;
 
-namespace SimplePluginTest.Sdk;
+namespace Testing.Sdk;
 
 public interface ITypedPlugin : IPluginModule
 {

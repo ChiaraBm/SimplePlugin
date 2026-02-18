@@ -7,11 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\SimplePlugin\SimplePlugin.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <ProjectReference Include="..\..\SimplePlugin.Abstractions\SimplePlugin.Abstractions.csproj" />
+      <ProjectReference Include="..\Testing.Sdk\Testing.Sdk.csproj" />
     </ItemGroup>
 
 </Project>
